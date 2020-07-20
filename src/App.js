@@ -6,8 +6,7 @@ import img from './img/default-weather.jpeg';
 
 require('dotenv').config();
 const API_KEY = process.env.REACT_APP_API_KEY;
-alert(process.env);
-console.log(process.env);
+
 class App extends React.Component {
   state = {
     temperature: undefined,
