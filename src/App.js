@@ -55,7 +55,7 @@ class App extends React.Component {
       fetch(url)
         .then(response => response.json())
         .then(wiki_data => {
-          const pages = wiki_data.query.pages;debugger;
+          const pages = wiki_data.query.pages;
           for (let page in pages) {
             const wiki_img = pages[page].thumbnail?pages[page].thumbnail: img;
             this.setState({ wiki_source: wiki_img.source });
